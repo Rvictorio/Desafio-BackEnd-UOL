@@ -2,15 +2,15 @@ package rafael.victorio.uolhostbackend.model;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
-import lombok.EqualsAndHashCode;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 import rafael.victorio.uolhostbackend.controller.dtos.PlayerDto;
 
 @Entity(name = "players")
 @Table(name = "players")
 @Getter
 @Setter
+@AllArgsConstructor
+@NoArgsConstructor
 @EqualsAndHashCode(of = "id")
 public class Player {
 

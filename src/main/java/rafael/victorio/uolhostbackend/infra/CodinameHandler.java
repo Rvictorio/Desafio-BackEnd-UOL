@@ -11,7 +11,7 @@ public class CodinameHandler {
 @Autowired
 private CondinameService service;
     public String findCodiname(GroupType groupType) {
-        if (groupType == GroupType.AVENGERS) {
+        if (groupType == GroupType.AVANGERS) {
         String firstMatch = service.getAvangersCodinameList().stream().findFirst().orElseThrow();
         this.service.getAvangersCodinameList().remove(firstMatch);
         return firstMatch;
