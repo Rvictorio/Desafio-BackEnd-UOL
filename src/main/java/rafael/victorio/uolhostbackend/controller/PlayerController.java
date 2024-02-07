@@ -13,6 +13,8 @@ import rafael.victorio.uolhostbackend.controller.dtos.PlayerDto;
 import rafael.victorio.uolhostbackend.model.Player;
 import rafael.victorio.uolhostbackend.service.PlayerService;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("/players")
 public class PlayerController {
@@ -25,5 +27,9 @@ public class PlayerController {
     Player newPlayer = service.createPlayer(dto);
 
     return new ResponseEntity<>(newPlayer, HttpStatus.CREATED);
+    }
+    public ResponseEntity<List<Player>> getAllPlayers(){
+        return new ResponseEntity<>(service.getAllPlayers(), HttpStatus.OK);
+
     }
 }
