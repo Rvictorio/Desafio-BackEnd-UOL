@@ -6,9 +6,10 @@ Este projeto foi desenvolvido utilizando lógicas básicas do JAVA conjunto as f
 
 ## Índice
 
+- [Executando o Projeto](#executando)
 - [Tecnologias](#tecnologias)
 - [Colaboradores](#colaboradores)
-- [Executando o Projeto](#executando)
+
 
 ## Executando
 
